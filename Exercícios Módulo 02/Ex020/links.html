@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = classe
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = children (filho)
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellowgreen;
+        }
+
+        a::after {
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: chocolate
+        }
+
+        .especial {
+            background-color:mediumspringgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/thiagosantos2021" target="_blank">GitHub</a></li>
+        <li><a href="https://www.facebook.com/thiagosantos.dosanjos/" target="_blank" class="especial">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/thiago-santos-96a18b20b/" target="_blank">LinkedIn</a></li>
+    </ul>
+</body>
+</html>

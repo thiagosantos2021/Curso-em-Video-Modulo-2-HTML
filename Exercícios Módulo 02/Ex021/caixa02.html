@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:lightblue;
+            margin: 0px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        nav {
+            background-color: rgba(57, 64, 71, 0.836);
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px; 
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgba(145, 142, 142, 0.795);
+        }
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias Totalmente Excelentes....</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus vitae suscipit provident obcaecati perferendis optio rerum illo voluptatibus, libero sequi deserunt nesciunt temporibus id, quo placeat odio et quis!</p>
+                <aside>
+                    <p>Artigo escrito por Chico Tripa</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Thiago Santos</p>
+    </footer>
+</body>
+</html>
